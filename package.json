@@ -1,0 +1,24 @@
+{
+  "name": "github-action-readme-profiles",
+  "version": "1.0.0",
+  "description": "A simple practice/guide on how to create a github action by Jaoude",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muchirijane/github-action-readme-profiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muchirijane/github-action-readme-profiles/issues"
+  },
+  "homepage": "https://github.com/muchirijane/github-action-readme-profiles#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0"
+  }
+}
