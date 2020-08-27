@@ -5,8 +5,8 @@ inputs:
     description: "data.json"
     required: true
     default: "data.json"
-    github-token:
-    description: 'github token'
+  github-token:
+    description: "github token"
     required: true
 
 runs:
