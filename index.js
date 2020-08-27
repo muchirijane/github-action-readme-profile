@@ -1,9 +1,9 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-
+const readmeBox = require('readme-box').ReadmeBox;
 const fs = require('fs');
 const path = require('path');
-const readmeBox = require('readme-box').ReadmeBox;
+
 
 (async () => {
     try {
