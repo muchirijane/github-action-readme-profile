@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-const readmeBox = require('readme-box');
+//const readmeBox = require('readme-box');
 const fs = require('fs');
 const path = require('path');
 
@@ -14,7 +14,7 @@ const path = require('path');
         const data = fs.readFileSync(filepath, 'utf8');
         console.log('GITHUB REF', process.env.GITHUB_REF.split('/')[2]);
 
-        await readmeBox.updateSection(data, {
+        await updateSection(data, {
             owner: process.env.GITHUB_REPOSITORY.split('/')[0],
             repo: process.env.GITHUB_REPOSITORY.split('/')[1],
             branch: process.env.GITHUB_REF.split('/')[2],
