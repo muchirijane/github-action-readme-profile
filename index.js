@@ -2,11 +2,12 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 const fs = require('fs');
+const path = require('path');
 
 try {
     // `who-to-greet` input defined in action metadata file
     const jsonPath = core.getInput('json-file-path');
-    const content = fs.readFileSync(jsonPath);
+    const content = fs.readFileSync(jsonPath.join(process.env.GITHUB_WORRKSPACE, jsonPath));
     console.log(JSON.parse(content));
     console.log(content);
     const time = (new Date()).toTimeString();
